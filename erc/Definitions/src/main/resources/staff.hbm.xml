@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.ebc.definitions.staff.entity.Staff" table="AQSTAFF">
+
+		<id name="prsId">
+			<generator class="increment"></generator>
+		</id>
+		<property name="prsName"></property>
+		<property name="prsSurname"></property>
+		<property name="prsAge"></property>
+		<property name="prsGender"></property>
+		<property name="prsStatus"></property>
+		<property name="prsTask"></property>
+		<property name="prsBirthdate"></property>
+		<property name="prsStarteddate"></property>
+		<property name="prsEmail"></property>
+		<property name="prsAdress"></property>
+		<property name="prsPhonenumber"></property>
+		<property name="prsHomePhonenumber"></property>
+		<property name="prsWorkphone"></property>
+		<property name="prsPassword"></property>
+		<property name="prsState"></property>
+		<property name="prsOrganizationId"></property>
+
+	</class>
+</hibernate-mapping>  

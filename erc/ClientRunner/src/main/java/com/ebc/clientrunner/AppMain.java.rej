@@ -1,0 +1,31 @@
+--- AppMain.java
++++ AppMain.java
+@@ -48,7 +49,10 @@
+ 	private JMenuItem mntmTestTable;
+ 	private JMenu mnDoctor;
+ 	private JMenuItem mntmDoctor;
+-
++	private JMenu mnDefinition;
++	private JMenuItem mntmDefinition;
++	
++	
+ 	public AppMain() {
+ 		getContentPane().setFont(new Font("Dialog", Font.PLAIN, 20));
+ 
+@@ -122,6 +126,16 @@
+ 		mntmDoctor = new JMenuItem("Doctor");
+ 		mntmDoctor.setFont(new Font("Dialog", Font.PLAIN, 20));
+ 		mnDoctor.add(mntmDoctor);
++		
++		mnDefinition = new JMenu("Definition");
++		mnDefinition.setFont(new Font("Dialog", Font.PLAIN,20));
++		menuBar.add(mnDefinition);
++		
++		mntmDefinition =  new JMenuItem("Definition");
++		mntmDefinition.setFont(new Font("Dialog",Font.PLAIN,20));
++		mnDefinition.add(mntmDefinition);
++		
++		
+ 
+ 		clickMenuItem();
+ 

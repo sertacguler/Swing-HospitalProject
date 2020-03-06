@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.ebc.outpatient.protocol.ProtocolDTO" table="AQPROTOCOL">
+
+		<id name="medicalOrderId">
+			<generator class="increment"></generator>
+		</id>
+		<property name="module"></property>
+		<property name="orderNo"></property>
+		<property name="admissionId"></property>
+		<property name="organizationId"></property>
+		<property name="doctorId"></property>
+		<property name="status"></property>
+		<property name="dateCreated"></property>
+		<property name="userCreatedId"></property>
+		<property name="dateUpdated"></property>
+		<property name="userUpdatedId"></property>
+		<property name="dischargeDate"></property>
+		<property name="dischargeTypeId"></property>
+		<property name="dischargeNote"></property>
+		<property name="dischargeUserId"></property>
+
+	</class>
+</hibernate-mapping>  

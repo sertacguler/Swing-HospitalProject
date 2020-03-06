@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.erc.outpatient.anamnez.entity.Anamnez" table="AQANAMNEZ">
+
+		<id name="anamnezId">
+			<generator class="increment"></generator>
+		</id>
+		<property name="admissionId">
+			<column name="admissionId" />
+		</property>
+		<property name="detail">
+			<column name="detail" />
+		</property>
+		<property name="createdBy">
+			<column name="createdBy" />
+		</property>
+		<property name="updatedBy">
+			<column name="updatedBy" />
+		</property>
+		<property name="createdAt">
+			<column name="createdAt" />
+		</property>
+		<property name="updatedAt">
+			<column name="updatedAt" />
+		</property>
+		<property name="status">
+			<column name="status" />
+		</property>
+
+	</class>
+</hibernate-mapping>  

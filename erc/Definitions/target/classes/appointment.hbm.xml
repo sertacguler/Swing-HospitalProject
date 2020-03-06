@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.erc.admission.appointment.entity.AppointmentDto" table="AQAPPOINTMENT">
+
+		<id name="appointmentid">
+			<generator class="increment"></generator>
+		</id>
+		<property name="createdAt" type="date">
+			<column name="createdAt" />
+		</property>
+		<property name="staffid" type="int">
+			<column name="staffid" />
+		</property>
+		<property name="patientid" type="int">
+			<column name="patientid" />
+		</property>
+		<property name="organizationid" type="int">
+			<column name="organizationid" />
+		</property>
+		<property name="status" type="int">
+			<column name="status" />
+		</property>
+		<property name="admissionid" type="int">
+			<column name="admissionid" />
+		</property>
+	</class>
+</hibernate-mapping>  
